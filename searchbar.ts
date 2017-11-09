@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
@@ -6,12 +6,12 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'searchbar.html',
 })
 export class Searchbar {
-
+  Input() searchtitle:string = "Search";
+  Input() showtitle:boolean = false;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SearchbarPage');
+    console.log('ionViewDidLoad Searchbar');
   }
-
 }
